@@ -1,0 +1,32 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="row my-5">
+    <div class = "col-12 d-flex justify-content-center align-items-center ">
+        <div class="circular-image-container">
+            <img class = "circular-image" src="{% static "images/base/my.jpg" %}" alt="Image">
+        </div>
+    </div>
+    <div class = "col-12 text-center mt-3">
+        <h4 class = 'title'> Hi, my name is </h4>
+        <h1 class = 'name'> Shivam Kumar </h1>
+    </div>
+
+    <div class = "col-12 text-center mt-3">
+        <a href="https://in.linkedin.com/in/shivamkumards" target="_blank">
+            <img src="{% static "images/base/in.jpg" %}" alt="images/base/in.jpg" width="50" hight="50" class="round-linkimg ms-2" >
+        </a>
+
+        <a href="https://github.com/shivamlal" target="_blank">
+            <img src="{% static "images/base/git.png" %}" alt="images/base/git.png" width="50" hight="50" class="round-linkimg ms-2">
+        </a>
+
+        <a href="https://www.kaggle.com/shivam2kumar" target="_blank">
+            <img src="{% static "images/base/kg.jpg" %}" alt="images/base/kg.jpg" width="50" hight="50" class="round-linkimg ms-2">
+        </a>
+    </div>
+</div>
+
+{% endblock body %}

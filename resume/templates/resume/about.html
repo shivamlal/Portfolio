@@ -1,0 +1,72 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="row my-4">
+    <div class = "col-3 d-flex justify-content-center align-items-center">
+        <img src="{% static "images/base/my2.jpg" %}" alt="image" class="about-image">
+    </div>
+
+    <div class="col-7 text-left text-light">
+        <h2>Hello!</h2>
+        <p class="fs-5">
+            I am a dedicated data scientist with extensive experience in leveraging data to drive strategic 
+            decisions and solve complex problems. I have built a career specializing in natural language 
+            processing, machine learning, and data science, and currently work with Clarlee.ai.
+        </p>
+        <p class="fs-5">
+            My expertise includes advanced techniques and tools such as Scikit-learn, TensorFlow, pandas, 
+            Keras, and programming languages including Python and SQL. Noteworthy projects include developing 
+            a predictive model that enhanced severity and litigation accuracy by 20%, and spearheading a 
+            data-driven initiative that improved operational efficiency by 10%.
+        </p>
+
+    </div>
+</div>
+
+<div class = "row my-2">
+    <h2 class="text-center" style="color: #4ffb4f;"> My Tech Stack </h2>
+
+    <div class = "d-flex justify-content-around align-items-center mt-3">
+        <img src="{% static "images/base/py.png" %}"
+        width = "70"
+        hight = "70"
+        alt="python" 
+        class="img-fluid"
+        >
+        <img src="{% static "images/base/pd.png" %}"
+        width = "70"
+        hight = "70"
+        alt="pandas" 
+        class="img-fluid"
+        >
+        <img src="{% static "images/base/ml.png" %}"
+        width = "70"
+        hight = "70"
+        alt="ml" 
+        class="img-fluid"
+        >
+        <img src="{% static "images/base/nlp.png" %}"
+        width = "70"
+        hight = "70"
+        alt="nlp" 
+        class="img-fluid"
+        >
+        <img src="{% static "images/base/sql.jpg" %}"
+        width = "70"
+        hight = "70"
+        alt="sql" 
+        class="img-fluid"
+        >
+        <img src="{% static "images/base/dj1.jpg" %}"
+        width = "70"
+        hight = "70"
+        alt="dj" 
+        class="img-fluid"
+        >
+    </div>
+</div>
+
+
+{% endblock body %}

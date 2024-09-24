@@ -1,0 +1,26 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="row my-2">
+    <div class="container mt-5">
+        <ul class="list-group">
+            {% for experience in experiences %}
+                <div class="jumbtron jumbtron-fluid mt-2">
+                    <li class="list-group-item">
+                        <h5>{{ experience.title }}</h5>
+                        <p><strong>Company:</strong> {{ experience.company }}</p>
+                        <p><strong>Start Date:</strong> {{ experience.start_date }}</p>
+                        <p><strong>End Date:</strong> {{ experience.end_date|default:"Present" }}</p>
+                        <p><strong>Description:</strong> {{ experience.description }}</p>
+                    </li>
+                </div>
+            {% empty %}
+                <li class="list-group-item">No experiences found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,48 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="row my-2">
+    <div class="col-4 text-center my-5 text-light">
+        <h1 class="mt-5 "> Wellcome! </h1>
+        <h3 class="mt-5"> shiv22lal@gmail.com</h3>
+            <div class=" d-flex justify-content-center align-items-center mt-5">
+                <a href="https://in.linkedin.com/in/shivamkumards" target="_blank">
+                    <img src="{% static "images/base/in.jpg" %}" alt="images/base/in.jpg" width="50" hight="50" class="round-linkimg ms-2" >
+                </a>
+        
+                <a href="https://x.com/shiv22lal" target="_blank">
+                    <img src="{% static "images/base/xlg.webp" %}" alt="images/base/xlg.webp" width="50" hight="50" class="round-linkimg ms-2">
+                </a>
+        
+                <a href="https://github.com/shivamlal" target="_blank">
+                    <img src="{% static "images/base/git.png" %}" alt="images/base/git.png" width="50" hight="50" class="round-linkimg ms-2">
+                </a>
+            </div>
+
+
+
+
+    </div>
+
+    <div class="col-5 offset-1 mt-3 ">
+      <div class="container form-container">
+          <form method="POST">
+            {% csrf_token %}
+            <div class="form-group m-3">
+
+              {{form.as_p}}
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+
+  </div>
+
+    </div>
+
+</div>
+
+{% endblock body %}
